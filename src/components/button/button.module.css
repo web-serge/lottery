@@ -1,12 +1,9 @@
 .button {
     background: none;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--dark-color);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 
     &:disabled {
         opacity: 0.64;
@@ -16,6 +13,7 @@
 }
 
 .default {
+    display: block;
     border-radius: 40px;
     border: 1px solid var(--dark-color);
     padding: 13px 21px;
@@ -28,14 +26,12 @@
 .number {
     width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     cursor: pointer;
     background-color: var(--white-color);
-    margin-top: -1px;
+    margin: -1px -1px 0 0;
 
     &.selected {
         background-color: var(--selected-color);
@@ -43,10 +39,16 @@
         border-color: transparent;
         width: 34px;
         height: 34px;
+        margin: 2px 2px 3px 3px;
     }
 }
 
-.icon:hover {
-    color: var(--selected-color);
-    scale: 1.1;
+.icon{
+    &:hover {
+        color: var(--selected-color);
+        scale: 1.1;
+    }
+    &:active {
+        scale: 0.9;
+    }
 }

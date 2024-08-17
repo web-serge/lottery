@@ -64,16 +64,20 @@ export const Lottery = () => {
                     </svg>
                 </Button>
             </div>
-            <Typography as={'span'} className={s.fieldNumber}>Поле 1 </Typography>
-            <Typography as={'span'} light>Отметьте 8 чисел.</Typography>
+            <div className={s.fieldText}>
+                <Typography as={'span'}>Поле 1 </Typography>
+                <Typography as={'span'} light>Отметьте 8 чисел.</Typography>
+            </div>
             <Field
                 numbers={Array.from({ length: 19 }, (_, i) => i + 1)}
                 selected={selectedFirstField}
                 maxSelect={8}
                 onSelect={handleSelectFirstField}
             />
-            <Typography as={'span'} className={s.fieldNumber}>Поле 2 </Typography>
-            <Typography as={'span'} light>Отметьте 1 число.</Typography>
+            <div className={s.fieldText}>
+                <Typography as={'span'}>Поле 2 </Typography>
+                <Typography as={'span'} light>Отметьте 1 число.</Typography>
+            </div>
             <Field
                 numbers={[1, 2]}
                 selected={selectedSecondField}

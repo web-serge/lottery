@@ -1,7 +1,6 @@
 .field {
-    display: grid;
-    grid-template-columns: repeat(7, 40px);
     margin-bottom: 20px;
-    align-items: center;
-    justify-items: center;
+    display: block;
+    padding: 1px 0 0 1px;
+    font-size: 0;
 }
