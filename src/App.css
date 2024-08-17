@@ -1,0 +1,29 @@
+:root {
+    --selected-color: #ffd205;
+    --border-color: #ddd;
+    --dark-color: #000;
+    --gradient: linear-gradient(to bottom, #4568DC, #B06AB3);
+    --white-color: #fff;
+    --shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.App {
+    background: var(--gradient);
+    padding: 17px 12px 218px;
+}

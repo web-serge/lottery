@@ -1,0 +1,29 @@
+.lottery {
+    background-color: white;
+    padding: 17px 12px 24px;
+    border-radius: 3px;
+    height: 368px;
+    width: 296px;
+    animation: feed 1s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.fieldNumber {
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.lotteryButton {
+    margin: 0 auto;
+}
+
+@keyframes feed {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
